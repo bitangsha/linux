@@ -1,0 +1,10 @@
+WINE_FULLSCREEN_FSR=1 WINE_FULLSCREEN_FSR_STRENGTH=0 mangohud gamemoderun %command%
+
+#Mafia3
+eval $(echo "WINE_FULLSCREEN_FSR=0 DXVK_ASYNC=1 mangohud %command%" | sed "s/2KLauncher\/LauncherPatcher.exe'.*/Mafia3DefinitiveEdition.exe'/")
+
+#FIFA17
+MANGOHUD_CONFIG=fps_limit=60
+
+#Steam scaling
+STEAM_FORCE_DESKTOPUI_SCALING=1.5
