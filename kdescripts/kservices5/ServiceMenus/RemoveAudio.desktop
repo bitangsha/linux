@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=video/quicktime;video/x-matroska;video/mp4;
+Actions=remove_audio;
+Encoding=UTF-8
+Terminal=true
+
+[Desktop Action remove_audio]
+Name=Remove Audio
+Exec=~/Scripts/DavinciScripts/remove_audio.sh

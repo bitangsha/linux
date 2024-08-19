@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=image/webp;
+Actions=webp_to_jpg;
+Encoding=UTF-8
+Terminal=true
+
+[Desktop Action webp_to_jpg]
+Name=Convert To .jpg
+Exec=~/Scripts/Image/webp_to_jpg.sh

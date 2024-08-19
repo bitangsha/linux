@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=video/x-matroska;video/mp4;
+Actions=convert_to_mov;
+Encoding=UTF-8
+Terminal=true
+
+[Desktop Action convert_to_mov]
+Name=Convert To .mov
+Exec=~/Scripts/DavinciScripts/to_mov.sh

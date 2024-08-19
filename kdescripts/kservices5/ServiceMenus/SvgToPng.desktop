@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=image/svg+xml;
+Actions=svg_to_png;
+Encoding=UTF-8
+Terminal=true
+
+[Desktop Action svg_to_png]
+Name=Convert To .png
+Exec=~/Scripts/Image/svg_to_png.sh

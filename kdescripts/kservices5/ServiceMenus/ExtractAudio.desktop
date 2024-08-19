@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=video/mp4;
+Actions=extract_audio;
+Encoding=UTF-8
+Terminal=true
+
+[Desktop Action extract_audio]
+Name=Extract Audio
+Exec=~/Scripts/DavinciScripts/extract_audio.sh

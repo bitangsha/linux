@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=video/quicktime;video/avi;
+Actions=convert_to_mp4;
+Encoding=UTF-8
+Terminal=true
+
+[Desktop Action convert_to_mp4]
+Name=Convert To .mp4
+Exec=~/Scripts/DavinciScripts/to_mp4.sh
