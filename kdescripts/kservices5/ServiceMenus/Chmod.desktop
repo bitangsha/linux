@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=application/x-shellscript;
+Actions=chmodx;
+Encoding=UTF-8
+Terminal=false
+
+
+[Desktop Action chmodx]
+Name=Give Execution Permission
+Exec=~/Scripts/Utils/chmodx.sh
+Icon=utilities-terminal
