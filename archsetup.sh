@@ -20,4 +20,5 @@ yay -S --noconfirm libxcrypt-compat;
 flatpak install -y flathub net.davidotek.pupgui2;
 flatpak install -y flathub com.github.wwmm.easyeffects;
 flatpak install -y com.heroicgameslauncher.hgl;
+flatpak install -y com.google.Chrome;
 echo "ALL DONE, reboot"
