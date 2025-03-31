@@ -21,4 +21,5 @@ flatpak install -y flathub net.davidotek.pupgui2;
 flatpak install -y flathub com.github.wwmm.easyeffects;
 flatpak install -y com.heroicgameslauncher.hgl;
 flatpak install -y com.google.Chrome;
+flatpak install -y com.microsoft.Edge;
 echo "ALL DONE, reboot"
