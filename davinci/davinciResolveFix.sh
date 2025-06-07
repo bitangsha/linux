@@ -26,7 +26,7 @@ if echo "$output" | grep -q "error: /usr/lib/libgdk_pixbuf"; then
     echo "Copied libgdk_pixbuf files to /opt/resolve/libs."
 fi
 
-# Check for the second error
+# Check for the third error
 if echo "$output" | grep -q "error while loading shared libraries: libjpeg.so.62"; then
     echo "Error detected: error while loading shared libraries: libjpeg.so.62"
 

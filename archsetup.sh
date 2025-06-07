@@ -1,9 +1,26 @@
 #!/bin/bash;
+
+##########################################
+##########################################
+
+##            SET FASTEST MIRRORS                        
+
+###########################################
+###########################################
+
 sudo pacman -Sy;
 sudo pacman -S --needed --noconfirm reflector;
 sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak;
 sudo reflector --verbose --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist;
 sudo pacman -Sy;
+
+##########################################
+##########################################
+
+##            PACKAGE INSTALLS                        
+
+###########################################
+###########################################
 sudo pacman -S --needed --noconfirm git;
 sudo pacman -S --needed --noconfirm timeshift;
 sudo pacman -S --needed --noconfirm nvidia-dkms;
@@ -64,15 +81,55 @@ sudo pacman -S --needed --noconfirm rsync;
 sudo pacman -S --needed --noconfirm sshfs;
 sudo pacman -S --needed --noconfirm elisa;
 sudo pacman -S --needed --noconfirm ntfs-3g;
+
+##########################################
+##########################################
+
+##              ENABLE SERVICES                        
+
+###########################################
+###########################################
+
 sudo systemctl enable --now cronie.service;
 sudo systemctl enable --now cups.service;
 sudo systemctl enable --now bluetooth;
 systemctl --user enable syncthing.service;
+
+
+##########################################
+##########################################
+
+##              SETUP YAY FOR AUR                        
+
+###########################################
+###########################################
 git clone https://aur.archlinux.org/yay.git;
 cd yay;
 makepkg -si;
+
+
+
+
+
+##########################################
+##########################################
+
+##              SETUP YAY FOR AUR                        
+
+###########################################
+###########################################
 yay -S --noconfirm pamac-aur;
 yay -S --noconfirm libxcrypt-compat;
+
+
+
+##########################################
+##########################################
+
+##              FLATPAKS                        
+
+###########################################
+###########################################
 flatpak install -y flathub net.davidotek.pupgui2;
 flatpak install -y flathub com.github.wwmm.easyeffects;
 flatpak install -y com.heroicgameslauncher.hgl;
@@ -80,4 +137,7 @@ flatpak install -y com.google.Chrome;
 flatpak install -y com.microsoft.Edge;
 flatpak install -y com.obsproject.Studio;
 flatpak install -y com.dec05eba.gpu_screen_recorder;
+
+
+
 echo "ALL DONE, reboot";
